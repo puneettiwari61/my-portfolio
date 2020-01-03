@@ -9,6 +9,7 @@ export default function Footer() {
           <a href='https://github.com/puneettiwari61' rel='noopener noreferrer' target='_blank'><i class="fab fa-github-square"></i></a>
           <a href='https://medium.com/@puneettiwari61' rel='noopener noreferrer' target='_blank'><i class="fab fa-medium"></i></a>
           </div>
+          <small className='last'> &copy; 2020 Puneet Tiwari. All rights reserved.</small>
       </footer>
   );
 }

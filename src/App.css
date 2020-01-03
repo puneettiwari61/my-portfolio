@@ -239,6 +239,7 @@ hr{
   background: #54A488;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  color:white
 }
 
 .back {
@@ -477,7 +478,7 @@ a:link{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .fab{
@@ -505,3 +506,14 @@ a:link{
 
 
 
+.last {
+  font-family: 'Times New Roman', Times, serif;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+.footer {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
