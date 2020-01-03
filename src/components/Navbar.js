@@ -6,7 +6,7 @@ function Navbar(){
     <header className='header'>
       <nav className='nav'>
         <div className='lnav'>
-            <img className='avatar-1' src={Avatar} alt='my-avatar'/>
+            <Link  to=''><img className='avatar-1' onClick={(event)=>handleLineAbout(event)} src={Avatar} alt='my-avatar'/></Link>
         </div>
         <div className='rnav'>
           <div className='nav-link'><Link className='aboutlink' id='about' onClick={(event)=>handleLineAbout(event)} to=''>About</Link></div>
@@ -28,7 +28,8 @@ function handleLineWork(event) {
 }
 
 function handleLineAbout(event) {
-  (event.target.style.textDecoration = 'underline');
+  const ab = document.querySelector('#about');
+  ab.style.textDecoration = 'underline';
   const w = document.querySelector('#work');
   w.style.textDecoration = 'none';
   const blg = document.querySelector('#blog');

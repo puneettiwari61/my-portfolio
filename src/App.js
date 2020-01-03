@@ -5,6 +5,7 @@ import About from './components/About'
 import Work from './components/work/Work'
 import Blog from './components/blog/Blog'
 import { BrowserRouter, Route} from 'react-router-dom';
+import Footer from './components/footer/Footer'
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
        <Route path='/work' component={Work}></Route>
        <Route path='/blog' component={Blog}></Route>
       </BrowserRouter>
+      <Footer />
     </React.Fragment>
   );
 }
