@@ -1,38 +1,421 @@
-.App {
-  text-align: center;
+.nav {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.lnav {
+  background-color: rgb(245,249,248);
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.avatar-1{
+  border-radius: 50%;
+  width: 80px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link{
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  /* padding-bottom: 0.8rem; */
+}
+
+.header {
+  background-color: #E0EBE8;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 100;
+}
+
+/* ------intro and main----- */
+
+.main{
+  font-size: 0;
+  overflow: hidden;
+}
+.main-image{
+  width: 99.9vw;
+  /* overflow: hidden; */
+}
+
+.main-div {
+ padding-top: 5rem;
+}
+
+/* --------------About--------------- */
+
+.about{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 8rem;
 }
 
-.App-link {
-  color: #61dafb;
+.hi-img-div {
+  background-color: rgb(245,249,248);
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hi-img {
+  border-radius: 50%;
+  width: 150px;
+  padding: 0.5rem;
+}
+
+.about-me, .writing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .about-me {
+  margin-bottom: 5rem;
+} */
+
+.gesture {
+  margin: 1rem;
+  color: #5BB3A0;
+}
+
+.para-1{
+  text-align: center;
+  word-break:normal;
+  width: 22rem;
+  margin: 0px;
+  color: rgb(85, 80, 80);
+  letter-spacing: 1px;
+  line-height:1.4;
+}
+
+hr{
+  width: 10rem;
+  opacity: 0.3;
+  border: 0.5px dashed black;
+  margin: 5rem;
+}
+
+.hr-2{
+  width: 5rem;
+  margin: 0.5rem;
+}
+
+.hr-3{
+  opacity: 0;
+}
+
+.what-i-do {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-3 {
+  background: url(./avatar/reacticon2.png);
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-name: change;
+  animation-duration: 8s;
+  animation-timing-function: cubic-bezier(1,0,0,1);
+  animation-iteration-count: infinite;
+}
+
+.hi-transition{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.hi-transition2 {
+  margin-right: 0;
+  margin-left: 2.5rem;
+}
+
+.para-2 {
+  text-align: left;
+}
+
+.gesture-2 {
+  text-align: left;
+  margin-left: 0px;
+  letter-spacing: 5px;
+}
+
+.writing2 {
+  align-items: flex-start;
+}
+
+
+.video {
+  width: 50px;
+  height: 50px;
+  background: url(./avatar/v2.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.what-i-can-do {
+  font-size: 3rem;
+  color: #42846C;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+/* ------------------------------------------------------ */
+@keyframes change {
+  0% {background: url(./avatar/reacticon2.png); background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: change;
+    animation-duration: 5s;
+    animation-iteration-count: 10;}
+  25% {background: url(./avatar/javascripticon.png);background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: change;
+    animation-duration: 5s;
+    animation-iteration-count: 10;}
+  50% {background: url(./avatar/css.svg);background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: change;
+    animation-duration: 5s;
+    animation-iteration-count: 10;}
+  75% {background: url(./avatar/html.png);  background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: change;
+    animation-duration: 5s;
+    animation-iteration-count: 10;}
+  100% {background: url(./avatar/reacticon2.png);  background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: change;
+    animation-duration: 5s;
+    animation-iteration-count: 10;}
+}
+
+
+
+
+/* ----------Work------------------ */
+.card{
+  width: 300px;
+  height: 350px;
+  border: 1px solid #0c0c0c;
+  position: relative;
+  transform-style: preserve-3d;
+  transition-property: all ;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #54A488;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(66, 194, 156);
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.color {
+  background: #55A587;
+  width: 99.2vw;
+  /* height: 28px; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.color2{
+  background: #3D3D3D;
+}
+
+.color3 {
+  background: #3C8AAC;
+}
+
+.color4 {
+  background: rgb(230, 228, 228);
+}
+
+.color5 {
+  background: #E67E22;
+}
+
+.color6 {
+  background: #F6BF32;
+}
+
+.ly-img-div {
+  width: 500px;
+  height: 600px;
+  padding-top: 8rem;
+}
+.ly-img-div2 {
+  width: 500px;
+  height: 550px;
+  padding-top: 8rem;
+}
+.ly-img-div3 {
+  width: 500px;
+  height: 550px;
+  padding-top: 8rem;
+}
+
+.ly-img {
+  width: 100%;
+  transition: all 0.7s;
+}
+
+.ly-img:hover {
+  box-shadow: black 0 0 10px 5px;
+}
+
+.details {
+  width: 300px;
+  height: 250px;
+  border: 3px solid rgb(255, 255, 255);
+  opacity: 0;
+  transition: all 1s;
+  position: absolute;
+  right: 200px;
+  top: 200px;
+  border-radius: 10px;
+  background: white;
+  color:rgb(100, 94, 94);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+}
+
+#todo:hover div {
+  opacity: 1;
+}
+#lyrics:hover div {
+  opacity: 1;
+}
+#plant:hover div {
+  opacity: 1;
+}
+#red:hover div {
+  opacity: 1;
+}
+#food:hover div {
+  opacity: 1;
+}
+#tic:hover div {
+  opacity: 1;
+}
+
+.work-head {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.recent-work {
+  font-size: 3rem;
+  color: #54A488;
+  font-weight: 300;
+}
+/* 
+a{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+a:hover{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+a:focus{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+a:visited{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+a:link{
+  outline: none;
+  border: none;
+  box-shadow: none;
+} */
+/* -----------link----------- */
+.aboutlink{
+  text-decoration: none;
+  color: #54A488;
+}
+
+.aboutlink:hover{
+  color: rgb(54, 100, 84);
+}
+
+.aboutlink:focus{
+  text-decoration: underline;
+}
+.aboutlink:visited{
+  text-decoration: underline;
+}
+.aboutlink:active{
+  text-decoration: underline;
+}
+
+
+/* -------------blog------------ */
+.blog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
