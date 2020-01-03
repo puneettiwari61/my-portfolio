@@ -9,14 +9,38 @@ function Navbar(){
             <img className='avatar-1' src={Avatar} alt='my-avatar'/>
         </div>
         <div className='rnav'>
-          <div className='nav-link'><Link className='aboutlink' to=''>About</Link></div>
-          <div className='nav-link'><Link className='aboutlink' to='Work'>Work</Link></div>
-          <div className='nav-link'><Link className='aboutlink' to='Blog'>Blog</Link></div>
+          <div className='nav-link'><Link className='aboutlink' id='about' onClick={(event)=>handleLineAbout(event)} to=''>About</Link></div>
+          <div className='nav-link'><Link className='aboutlink' id='work' onClick={(event)=>handleLineWork(event)} to='Work'>Work</Link></div>
+          <div className='nav-link'><Link className='aboutlink' id='blog' onClick={(event)=>handleLineBlog(event)}to='Blog'>Blog</Link></div>
         </div>
       </nav>
     </header>
   )
 }
 
+function handleLineWork(event) {
+  (event.target.style.textDecoration = 'underline');
+  const ab = document.querySelector('#about');
+  ab.style.textDecoration = 'none';
+  const blg = document.querySelector('#blog');
+  blg.style.textDecoration = 'none';
+  // console.log(event.target)          
+}
+
+function handleLineAbout(event) {
+  (event.target.style.textDecoration = 'underline');
+  const w = document.querySelector('#work');
+  w.style.textDecoration = 'none';
+  const blg = document.querySelector('#blog');
+  blg.style.textDecoration = 'none';
+}
+
+function handleLineBlog(event) {
+  (event.target.style.textDecoration = 'underline');
+  const w = document.querySelector('#work');
+  w.style.textDecoration = 'none';
+  const ab = document.querySelector('#about');
+  ab.style.textDecoration = 'none';
+}
 
 export default Navbar

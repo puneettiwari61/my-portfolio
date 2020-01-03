@@ -4,7 +4,7 @@ import Transitiondiv from './Transitiondiv'
 
 function About() {
   return (
-    <div className='about' id='about'>
+    <div className='about'>
       <div className='about-me'>
         <div className='hi-img-div'>
           <img className='hi-img' alt='hi' src={Hi} />
