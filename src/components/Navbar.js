@@ -24,7 +24,8 @@ function handleLineWork(event) {
   ab.style.textDecoration = 'none';
   const blg = document.querySelector('#blog');
   blg.style.textDecoration = 'none';
-  // console.log(event.target)          
+  // console.log(event.target)      
+  // checkIt(event);    
 }
 
 function handleLineAbout(event) {
@@ -42,6 +43,14 @@ function handleLineBlog(event) {
   w.style.textDecoration = 'none';
   const ab = document.querySelector('#about');
   ab.style.textDecoration = 'none';
+  // checkIt(event);
 }
+
+// function checkIt(event){
+//   // if(event.target.href=='/Work'){
+//   //   alert('work');
+//   // }
+//   console.log(event.target)
+// }
 
 export default Navbar

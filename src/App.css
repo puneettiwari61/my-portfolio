@@ -366,6 +366,7 @@ hr{
   font-size: 3rem;
   color: #54A488;
   font-weight: 300;
+  padding: 1rem;
 }
 /* 
 a{
@@ -480,7 +481,7 @@ a:link{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .fab{
@@ -492,6 +493,7 @@ a:link{
   animation-duration: 2s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
+  box-sizing: border-box;
 }
 
 .fab:hover{
@@ -520,6 +522,56 @@ align-items: center;
 flex-direction: column;
 }
 
+/* ------message------*/
+.message{
+  padding: 0.7rem 1.8rem;
+  background: #45b29a;
+  color: #1b7f69;
+  font-size: 1.2rem;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* margin: 1rem; */
+  margin-bottom: 4rem;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.message:hover{
+  background: #3ea08a;
+}
+
+.far{
+  padding-right: 4px;
+  font-size: 1.1rem;
+}
+
+.help {
+  text-decoration: none;
+  border: none;
+  font-size: 2rem;
+  padding: 0 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* -------------------app and app desc------------------------- */
+.app{
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  text-decoration:underline;
+}
+
+.app-desc {
+  /* word-break: keep-all; */
+  text-align: center;
+  line-height: 1.2;
+}
+
+
+
 @media screen and (max-width:816px) {
   body {
     font-size: 10px;
@@ -543,5 +595,83 @@ flex-direction: column;
   }
   .details {
     width: 150px;
+  }
+}
+@media screen and (max-width:425px){
+  body {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .main-div {
+    padding-top:4rem;
+   }
+   .main-image{
+     width: 100%;
+   }
+   .about {
+     box-sizing: border-box;
+     padding-top: 4rem;
+   }
+   .what-i-do {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .color {
+    width: 100%;
+    }
+  .details {
+    width: 180px;
+    height: fit-content;
+    padding: 0.2rem;
+    top:50%;
+    left:25%;
+    right:50%;
+    bottom:50%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .hi-img {
+    border-radius: 50%;
+    width: 100px;
+    padding: 0.5rem;
+  }
+  .what-i-can-do {
+    font-size: 2rem;
+  }
+  .avatar-1{
+    width: 50px;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+  .para-2,.para-1 {
+    font-size: 6px;
+    width: 15rem;
+  }
+
+  .hi-transition {
+    margin-right: 2rem;
+  }
+  .hi-transition2 {
+    margin-left: 0;
+  }
+  .ly-img-div2 {
+    width: 300px;
+    height: 268px;
+    padding-top: 2rem;
+  }
+  .ly-img-div {
+    width: 300px;
+    height: 300px;
+    padding-top: 2rem;
+  }
+  .ly-img-div3 {
+    width: 300px;
+    height: 268px;
+    padding-top: 2rem;
   }
 }
