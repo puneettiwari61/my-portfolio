@@ -674,4 +674,16 @@ flex-direction: column;
     height: 268px;
     padding-top: 2rem;
   }
+
+
+  .gesture,.gesture-2{
+    font-size: 15px;
+  }
+
+  .para-2,.para-1 {
+    font-size: 12px;
+  }
+  .hr-3{
+    margin: 2.5rem;
+  }
 }
